@@ -9,7 +9,7 @@ import { GROQ_API_KEY, UPSTASH_REDIS_REST_URL, UPSTASH_REDIS_REST_TOKEN } from "
 import { ChatGroq } from "@langchain/groq";
 
 export const model = new ChatGroq({
-  model: "llama-3.3-70b-versatile",
+  model: "openai/gpt-oss-120b",
   temperature: 0,
   apiKey: GROQ_API_KEY,
   streaming: true, // Enable streaming
